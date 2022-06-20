@@ -66,6 +66,15 @@ function renderPlanets() {
         // planetEl.style.linearG
         planetEl.classList.add("planet")
         planetDiv.appendChild(planetEl)
+
+        let overlay = document.createElement("div")
+        overlay.style.backgroundColor = "transparent"
+        overlay.style.width = `${diameter}`
+        overlay.style.height = `${diameter}`
+        overlay.classList.add("overlay")
+        planetEl.appendChild(overlay)
+
+
         planetDiv.onmouseover = () => {
             if (planetInfo.classList.contains("hide")) {
                 planetInfo.classList.remove("hide")

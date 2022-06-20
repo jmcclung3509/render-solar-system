@@ -76,3 +76,8 @@ button {
     font-size: 1.5rem;
     color: #b4bec6;
 }
+
+.overlay {
+    background: linear-gradient(to right, transparent, black);
+    border-radius: 50%;
+}
