@@ -71,8 +71,8 @@ function renderPlanets() {
                 planetInfo.classList.remove("hide")
                 planetInfo.classList.add("show")
             } else {
-                planetInfo.classList.remove("hide")
-                planetInfo.classList.add("show")
+                planetInfo.classList.remove("show")
+                planetInfo.classList.add("hide")
             }
         }
 
