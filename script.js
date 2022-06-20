@@ -70,10 +70,12 @@ function renderPlanets() {
             if (planetInfo.classList.contains("hide")) {
                 planetInfo.classList.remove("hide")
                 planetInfo.classList.add("show")
-            } else {
-                planetInfo.classList.remove("show")
-                planetInfo.classList.add("hide")
             }
+        }
+        planetDiv.onmouseout = () => {
+            if (planetInfo.classList.contains("show"))
+                planetInfo.classList.remove("show")
+            planetInfo.classList.add("hide")
         }
 
         let planetInfo = document.createElement("div")
@@ -102,3 +104,4 @@ function renderPlanets() {
 
 
 }
+
